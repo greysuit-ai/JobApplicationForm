@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cbd5e1;
+  color: black;
+}
+
+.container {
+  background-color: whitesmoke;
+  width: 80%;
+  max-width: 550px;
+  margin: auto;
+  padding: 20px;
+  justify-content: center;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-family: Impact;
+  font-weight: normal;
+  margin: 0 auto 0 auto;
+  letter-spacing: 0.06rem;
+}
+
+p {
+  font-family: monospace;
+  font-size: 1rem;
+  margin: 2px auto 10px auto;
+}
+
+hr {
+  margin: 20px auto;
+  border: 2px solid gray;
+  width: 100%;
+}
+
+label:not(.radio) {
+  display: block;
+  text-transform: uppercase;
+  font-family: montserrat;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+  color: #374151;
+  margin: 15px auto 6px;
+}
+
+.radio {
+  color: #374151;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 6px;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid navy;
+  outline: none;
+}
+
+input:invalid:not(:placeholder-shown),
+select:invalid:focus,
+textarea:invalid:not(:placeholder-shown) {
+  border: 1px solid red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border: 1px solid green;
+}
+
+select {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  color: black;
+  width: 100%;
+}
+
+select:focus {
+  border: 3px solid navy;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: grey;
+}
+
+.radio-btn {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid grey;
+  vertical-align: bottom;
+  position: relative;
+}
+
+.radio-btn::before {
+  display: block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translate(3px, 3px) scale(0);
+  transition: all 0.4s ease-in;
+}
+
+.radio-btn:checked::before {
+  transform: translate(4px, 4px) scale(2);
+  background-color: skyblue;
+}
+
+fieldset {
+  border: 1px solid grey;
+  width: 100%;
+  border-radius: 5px;
+  color: grey;
+}
+
+textarea {
+  width: 100%;
+  margin: 5px auto 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 5px;
+  background-color: #cbd5e1;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: midnightblue;
+  color: whitesmoke;
+}

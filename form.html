@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Our Team</title>
+  <link rel="stylesheet" href="form.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Application</h1>
+    <p>Tell us about yourself and how you can contribute.</p>
+
+    <hr>
+
+    <form action="#" method="post">
+
+      <label for="name">Full Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Tom Smith"
+        required
+        minlength="2"
+      />
+
+      <label for="email">Email Address</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="you@company.com"
+        required
+      />
+
+      <label for="position">Position</label>
+      <select id="position" name="position" required>
+        <option value="" disabled selected hidden class="sel">
+          Select a position...
+        </option>
+
+        <option value="frontend-engineer">Frontend Engineer</option>
+        <option value="backend-engineer">Backend Engineer</option>
+        <option value="product-designer">Product Designer</option>
+        <option value="project-manager">Project Manager</option>
+        <option value="data-scientist">Data Scientist</option>
+        <option value="devops-engineer">DevOps Engineer</option>
+      </select>
+
+      <label>Availability</label>
+
+      <fieldset class="radio-group">
+        <legend class="sr-only">Select your availability</legend>
+
+        <input
+          type="radio"
+          id="full-time"
+          name="availability"
+          value="full-time"
+          class="radio-btn"
+          checked
+        />
+        <label for="full-time" class="radio">Full-Time</label>
+
+        <input
+          type="radio"
+          id="part-time"
+          name="availability"
+          value="part-time"
+          class="radio-btn"
+        />
+        <label for="part-time" class="radio">Part-Time</label>
+      </fieldset>
+
+      <label for="message">Message</label>
+
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Share your vision, experience, and what excites you about this role..."
+        required
+        minlength="10"
+      ></textarea>
+
+      <button type="submit">Submit Application</button>
+
+    </form>
+  </div>
+</body>
+</html>
